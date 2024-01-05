@@ -10,8 +10,23 @@ export const useContextValue = () => {
 const CustomItemContext = (props) => {
   const [total, setTotal] = useState(0);
   const [item, setItem] = useState(0);
+
+  const handleAdd = (price) => {
+    setItem(item + 1);
+    setTotal((prevState) => prevState + price);
+  };
+
+  const handleRemove = (price) => {
+    if (total - price >= 0) {
+      setItem((prevState) => prevState - 1);
+      setTotal((prevState) => prevState - price);
+    }
+  };
+
   return (
-    <itemsContext.Provider value={{ item, setItem, total, setTotal }}>
+    <itemsContext.Provider
+      value={{ item, setItem, total, setTotal, handleAdd, handleRemove }}
+    >
       {props.children}
     </itemsContext.Provider>
   );

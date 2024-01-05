@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import styles from "../styles/Total.module.css";
 import { useContextValue } from "../contexts/itemContext";
 
 function Navbar() {
-  console.log(useContextValue());
   const { item, total } = useContextValue();
   return (
     <div className={styles.container}>
