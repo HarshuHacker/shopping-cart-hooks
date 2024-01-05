@@ -1,28 +1,28 @@
 const data = [
   {
     id: 1,
-    name: 'T-shirt',
-    price: 100,
+    name: 'iPhone Xr',
+    price: 49000,
   },
   {
     id: 2,
-    name: 'Pants',
-    price: 200,
+    name: 'Macbook Pro M1',
+    price: 125900,
   },
   {
     id: 3,
-    name: 'Shoes',
-    price: 300,
+    name: 'AirPods Pro (2nd generation) (USB - C) ',
+    price: 20789,
   },
   {
     id: 4,
-    name: 'Hat',
-    price: 400,
+    name: 'Apple Watch Series 9 GPS + Cellular 45mm',
+    price: 50900,
   },
   {
     id: 5,
-    name: 'Socks',
-    price: 500,
+    name: 'iPad Pro',
+    price: 0,
   },
 ];
 
