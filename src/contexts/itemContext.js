@@ -1,4 +1,4 @@
 import { createContext } from "react";
 
-const itemsContext = createContext();
-export default itemsContext;
+const itemsTotalContext = createContext()
+export default itemsTotalContext
